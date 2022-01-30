@@ -1,4 +1,4 @@
-import styles from "./InputText.module.css"
+import styles from './InputText.module.css'
 
 const InputText = ({ ...rest }) => {
     return (
@@ -7,5 +7,4 @@ const InputText = ({ ...rest }) => {
         </div>
     )
 }
-
 export default InputText
