@@ -1,0 +1,22 @@
+import { useState } from 'react'
+import StepPhoneEmail from '../Steps/StepPhoneEmail/StepPhoneEmail';
+import StepOTP from '../Steps/StepOTP/StepOTP';
+
+const Steps = {
+    1: StepPhoneEmail,
+    2: StepOTP
+}
+
+const Authenticate = () => {
+    const [step, setStep] = useState(1);
+    const Step = Steps[step];
+    const onNext = () => {
+        setStep(step + 1);
+    }
+
+    return (
+        <Step onNext={onNext} />
+    )
+}
+
+export default Authenticate
