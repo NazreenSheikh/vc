@@ -19,7 +19,7 @@ import Room from './pages/Room/Room'
 const App = () => {
     const { loading } = useLoading()
     return loading ? (
-        <Loader message="Your Wifi Sucks..." />
+        <Loader message="Loading . . ." />
     ) : (
         <Router>
             <Navigation />
